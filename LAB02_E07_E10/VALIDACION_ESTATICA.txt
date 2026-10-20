@@ -1,6 +1,0 @@
-Validación de generación offline con pkt-core 0.2.0:
-E07_DHCP: 6 equipos, 5 enlaces; recarga conserva XML.
-E08_DHCP_RELAY: 8 equipos, 7 enlaces; recarga conserva XML.
-E09_RADIUS: 6 equipos, 5 enlaces; recarga conserva XML.
-E10_TACACS: 7 equipos, 6 enlaces; recarga conserva XML.
-E07 sin Printer-PT: añadir manualmente. E08 DNS, SSH routers, E10 clientes/activación AAA y notas gráficas pendientes. No se abrió Cisco Packet Tracer. No se ejecutó ninguna prueba funcional de red.
