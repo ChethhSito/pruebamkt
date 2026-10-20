@@ -1,6 +1,6 @@
 # Montaje E08 — Andre Torres, 202210073
 
-Estado: material para montaje; no existe todavía un `.pkt` ni validación IOS en simulador.
+Estado: existe un `.pkt` generado offline y recargado con pkt-core; apertura y validación IOS en Cisco pendientes. Ver ../LEEME_PRIMERO.md antes de comenzar. Los pasos de montaje desde cero se conservan como referencia/alternativa.
 Fuente: páginas 17–18 del PDF original. Ver `figura_fuente.png` (fuente, no evidencia propia).
 
 ## Equipos y disposición

@@ -5,7 +5,7 @@
     "code": "202210073"
   },
   "target_packet_tracer": "9.0.1.0858",
-  "pkt_created": false,
+  "pkt_created": true,
   "simulation_verified": false,
   "devices": [
     {
@@ -124,5 +124,14 @@
       "address": "192.168.60.10/24",
       "gateway": "192.168.60.1"
     }
-  ]
+  ],
+  "generated_devices": [
+    "PC-ADMIN",
+    "PC-REMOTO",
+    "R1",
+    "R2",
+    "SRV-RADIUS",
+    "SW1"
+  ],
+  "generation_limitations": []
 }

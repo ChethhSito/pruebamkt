@@ -1,0 +1,12 @@
+{
+  "file": "LAB02_E07_TorresAndre.pkt",
+  "pkt_core_version": "0.2.0",
+  "devices": 6,
+  "links": 5,
+  "codec_roundtrip": "PASS",
+  "packet_tracer_opened": false,
+  "functional_tests": "NO EJECUTADAS",
+  "missing_devices": [
+    "IMP-B: modelo Printer-PT no incluido en las plantillas; añadir manualmente con sus dos parámetros IP y gateway y conectar según montaje.md."
+  ]
+}

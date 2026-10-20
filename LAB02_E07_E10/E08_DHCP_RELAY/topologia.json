@@ -5,7 +5,7 @@
     "code": "202210073"
   },
   "target_packet_tracer": "9.0.1.0858",
-  "pkt_created": false,
+  "pkt_created": true,
   "simulation_verified": false,
   "devices": [
     {
@@ -160,5 +160,16 @@
       "address": "DHCP: VLAN30",
       "gateway": "DHCP"
     }
-  ]
+  ],
+  "generated_devices": [
+    "PC-V10",
+    "PC-V20",
+    "PC-V30",
+    "R-DHCP",
+    "R-SEDE",
+    "SRV-DNS",
+    "SW-CEN",
+    "SW-SEDE"
+  ],
+  "generation_limitations": []
 }

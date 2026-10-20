@@ -5,7 +5,7 @@
     "code": "202210073"
   },
   "target_packet_tracer": "9.0.1.0858",
-  "pkt_created": false,
+  "pkt_created": true,
   "simulation_verified": false,
   "devices": [
     {
@@ -124,5 +124,16 @@
       "address": "172.16.20.5/24",
       "gateway": "172.16.20.1"
     }
+  ],
+  "generated_devices": [
+    "PC-A1",
+    "PC-A2",
+    "PC-B1",
+    "R1",
+    "SW-ACA",
+    "SW-ADM"
+  ],
+  "generation_limitations": [
+    "IMP-B: modelo Printer-PT no incluido en las plantillas; añadir manualmente con sus dos parámetros IP y gateway y conectar según montaje.md."
   ]
 }

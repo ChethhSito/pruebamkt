@@ -1,0 +1,10 @@
+{
+  "file": "LAB02_E10_TorresAndre.pkt",
+  "pkt_core_version": "0.2.0",
+  "devices": 7,
+  "links": 6,
+  "codec_roundtrip": "PASS",
+  "packet_tracer_opened": false,
+  "functional_tests": "NO EJECUTADAS",
+  "missing_devices": []
+}

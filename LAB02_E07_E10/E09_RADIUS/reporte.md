@@ -5,7 +5,7 @@ Packet Tracer objetivo: **9.0.1.0858**. Sección/grupo y fecha de entrega: compl
 
 ## Estado y alcance
 
-Material de preparación, no implementación verificada. No se ha creado ni abierto un `.pkt`: este entorno Linux no dispone de Packet Tracer, puente MCP ni paquete instalado para generarlo. No hay resultados de ping, DHCP, SSH, OSPF o AAA ejecutados. La sintaxis IOS propuesta requiere validación en los equipos simulados.
+Se generó un `.pkt` offline con pkt-core 0.2.0 y se verificó su recarga con el codec. No se ha abierto en Cisco Packet Tracer: no está instalado aquí. No hay resultados de ping, DHCP, SSH, OSPF o AAA ejecutados. Ver LEEME_PRIMERO.md para ajustes manuales pendientes. La sintaxis IOS incrustada requiere validación en los equipos simulados.
 
 ## Topología y direccionamiento
 
