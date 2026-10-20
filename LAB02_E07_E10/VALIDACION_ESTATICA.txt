@@ -1,0 +1,6 @@
+Comprobaciones ejecutadas por Python sobre los archivos generados:
+E07: tablas parseables, IP estáticas válidas, gateways en subred y banner/hostname presentes en scripts. No valida sintaxis IOS ni simulación.
+E08: tablas parseables, IP estáticas válidas, gateways en subred y banner/hostname presentes en scripts. No valida sintaxis IOS ni simulación.
+E09: tablas parseables, IP estáticas válidas, gateways en subred y banner/hostname presentes en scripts. No valida sintaxis IOS ni simulación.
+E10: tablas parseables, IP estáticas válidas, gateways en subred y banner/hostname presentes en scripts. No valida sintaxis IOS ni simulación.
+14 scripts IOS; capacidades E07: 244 y 149. No hay .pkt creados ni pruebas de red ejecutadas.

@@ -1,0 +1,37 @@
+enable
+configure terminal
+hostname SW1
+no ip domain-lookup
+enable secret class
+service password-encryption
+banner motd #Laboratorio URP - Andre Torres - 202210073#
+interface FastEthernet0/1
+ switchport mode access
+ no shutdown
+exit
+interface FastEthernet0/2
+ switchport mode access
+ no shutdown
+exit
+interface FastEthernet0/24
+ switchport mode access
+ no shutdown
+exit
+interface Vlan1
+ ip address 192.168.50.2 255.255.255.0
+ no shutdown
+exit
+ip default-gateway 192.168.50.1
+username localadmin secret Local2026
+aaa new-model
+radius-server host 192.168.50.100 key RadiusURP2026
+aaa authentication login default group radius local
+line console 0
+ login authentication default
+exit
+line vty 0 15
+ login authentication default
+ transport input telnet
+exit
+end
+copy running-config startup-config

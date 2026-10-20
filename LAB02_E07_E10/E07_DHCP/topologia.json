@@ -1,0 +1,128 @@
+{
+  "exercise": 7,
+  "student": {
+    "name": "Andre Torres",
+    "code": "202210073"
+  },
+  "target_packet_tracer": "9.0.1.0858",
+  "pkt_created": false,
+  "simulation_verified": false,
+  "devices": [
+    {
+      "name": "IMP-B",
+      "model": "Printer-PT"
+    },
+    {
+      "name": "PC-A1",
+      "model": "PC-PT"
+    },
+    {
+      "name": "PC-A2",
+      "model": "PC-PT"
+    },
+    {
+      "name": "PC-B1",
+      "model": "PC-PT"
+    },
+    {
+      "name": "R1",
+      "model": "1941"
+    },
+    {
+      "name": "SW-ACA",
+      "model": "2960"
+    },
+    {
+      "name": "SW-ADM",
+      "model": "2960"
+    }
+  ],
+  "links": [
+    {
+      "device_a": "R1",
+      "port_a": "G0/0",
+      "device_b": "SW-ADM",
+      "port_b": "F0/1",
+      "cable": "directo",
+      "source": "figura 7"
+    },
+    {
+      "device_a": "R1",
+      "port_a": "G0/1",
+      "device_b": "SW-ACA",
+      "port_b": "F0/1",
+      "cable": "directo",
+      "source": "figura 7"
+    },
+    {
+      "device_a": "SW-ADM",
+      "port_a": "F0/2",
+      "device_b": "PC-A1",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 7"
+    },
+    {
+      "device_a": "SW-ADM",
+      "port_a": "F0/3",
+      "device_b": "PC-A2",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 7"
+    },
+    {
+      "device_a": "SW-ACA",
+      "port_a": "F0/2",
+      "device_b": "PC-B1",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 7"
+    },
+    {
+      "device_a": "SW-ACA",
+      "port_a": "F0/3",
+      "device_b": "IMP-B",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 7"
+    }
+  ],
+  "addressing": [
+    {
+      "device": "R1",
+      "interface": "G0/0",
+      "address": "172.16.10.1/24",
+      "gateway": "—"
+    },
+    {
+      "device": "R1",
+      "interface": "G0/1",
+      "address": "172.16.20.1/24",
+      "gateway": "—"
+    },
+    {
+      "device": "PC-A1",
+      "interface": "NIC",
+      "address": "DHCP: ADMIN",
+      "gateway": "DHCP"
+    },
+    {
+      "device": "PC-A2",
+      "interface": "NIC",
+      "address": "DHCP: ADMIN",
+      "gateway": "DHCP"
+    },
+    {
+      "device": "PC-B1",
+      "interface": "NIC",
+      "address": "DHCP: ACADEMICO",
+      "gateway": "DHCP"
+    },
+    {
+      "device": "IMP-B",
+      "interface": "NIC",
+      "address": "172.16.20.5/24",
+      "gateway": "172.16.20.1"
+    }
+  ]
+}

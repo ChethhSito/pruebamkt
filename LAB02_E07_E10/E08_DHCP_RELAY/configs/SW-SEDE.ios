@@ -1,0 +1,41 @@
+enable
+configure terminal
+hostname SW-SEDE
+no ip domain-lookup
+enable secret class
+service password-encryption
+banner motd #Laboratorio URP - Andre Torres - 202210073#
+line console 0
+ password cisco
+ login
+exit
+vlan 10
+ name ALUMNOS
+exit
+interface FastEthernet0/5
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
+exit
+vlan 20
+ name DOCENTES
+exit
+interface FastEthernet0/10
+ switchport mode access
+ switchport access vlan 20
+ no shutdown
+exit
+vlan 30
+ name ADMINISTRATIVOS
+exit
+interface FastEthernet0/15
+ switchport mode access
+ switchport access vlan 30
+ no shutdown
+exit
+interface GigabitEthernet0/1
+ switchport mode trunk
+ no shutdown
+exit
+end
+copy running-config startup-config

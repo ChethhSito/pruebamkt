@@ -1,0 +1,21 @@
+enable
+configure terminal
+hostname SW-CEN
+no ip domain-lookup
+enable secret class
+service password-encryption
+banner motd #Laboratorio URP - Andre Torres - 202210073#
+line console 0
+ password cisco
+ login
+exit
+interface FastEthernet0/1
+ switchport mode access
+ no shutdown
+exit
+interface FastEthernet0/2
+ switchport mode access
+ no shutdown
+exit
+end
+copy running-config startup-config

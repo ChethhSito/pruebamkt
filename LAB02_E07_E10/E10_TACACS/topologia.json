@@ -1,0 +1,140 @@
+{
+  "exercise": 10,
+  "student": {
+    "name": "Andre Torres",
+    "code": "202210073"
+  },
+  "target_packet_tracer": "9.0.1.0858",
+  "pkt_created": false,
+  "simulation_verified": false,
+  "devices": [
+    {
+      "name": "PC-AQP",
+      "model": "PC-PT"
+    },
+    {
+      "name": "PC-NOC",
+      "model": "PC-PT"
+    },
+    {
+      "name": "R-AREQ",
+      "model": "2911 + HWIC-2T"
+    },
+    {
+      "name": "R-LIMA",
+      "model": "2911 + HWIC-2T"
+    },
+    {
+      "name": "SRV-TACACS",
+      "model": "Server-PT"
+    },
+    {
+      "name": "SW-AREQ",
+      "model": "2960"
+    },
+    {
+      "name": "SW-LIMA",
+      "model": "2960"
+    }
+  ],
+  "links": [
+    {
+      "device_a": "R-LIMA",
+      "port_a": "S0/0/0",
+      "device_b": "R-AREQ",
+      "port_b": "S0/0/0",
+      "cable": "serial DCE en R-LIMA",
+      "source": "figura 10"
+    },
+    {
+      "device_a": "R-LIMA",
+      "port_a": "G0/0",
+      "device_b": "SW-LIMA",
+      "port_b": "F0/24",
+      "cable": "directo",
+      "source": "figura 10"
+    },
+    {
+      "device_a": "SW-LIMA",
+      "port_a": "F0/1",
+      "device_b": "SRV-TACACS",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 10"
+    },
+    {
+      "device_a": "SW-LIMA",
+      "port_a": "F0/2",
+      "device_b": "PC-NOC",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 10"
+    },
+    {
+      "device_a": "R-AREQ",
+      "port_a": "G0/0",
+      "device_b": "SW-AREQ",
+      "port_b": "F0/24",
+      "cable": "directo",
+      "source": "figura 10"
+    },
+    {
+      "device_a": "SW-AREQ",
+      "port_a": "F0/2",
+      "device_b": "PC-AQP",
+      "port_b": "FastEthernet0",
+      "cable": "directo",
+      "source": "figura 10"
+    }
+  ],
+  "addressing": [
+    {
+      "device": "R-LIMA",
+      "interface": "G0/0",
+      "address": "10.10.10.1/24",
+      "gateway": "—"
+    },
+    {
+      "device": "R-LIMA",
+      "interface": "S0/0/0 DCE",
+      "address": "172.30.0.1/30",
+      "gateway": "—"
+    },
+    {
+      "device": "R-AREQ",
+      "interface": "S0/0/0",
+      "address": "172.30.0.2/30",
+      "gateway": "—"
+    },
+    {
+      "device": "R-AREQ",
+      "interface": "G0/0",
+      "address": "10.20.20.1/24",
+      "gateway": "—"
+    },
+    {
+      "device": "SW-AREQ",
+      "interface": "VLAN 1",
+      "address": "10.20.20.2/24",
+      "gateway": "10.20.20.1"
+    },
+    {
+      "device": "SRV-TACACS",
+      "interface": "NIC",
+      "address": "10.10.10.100/24",
+      "gateway": "10.10.10.1"
+    },
+    {
+      "device": "PC-NOC",
+      "interface": "NIC",
+      "address": "10.10.10.20/24",
+      "gateway": "10.10.10.1"
+    },
+    {
+      "device": "PC-AQP",
+      "interface": "NIC",
+      "address": "10.20.20.20/24",
+      "gateway": "10.20.20.1"
+    }
+  ]
+}
